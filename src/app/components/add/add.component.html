@@ -1,0 +1,52 @@
+<!-- <p>add works!</p>
+<div class="container">
+<div class="row">
+    <div class="col-md-5 offset-md-4">
+        <div class="input-group mb-3">
+            <input [(ngModel)]="name" type="text" class="form-control" placeholder="Enter Your Name">
+            <input [(ngModel)]="phonenum" type="text" class="form-control" placeholder="Enter Your Phone Number">
+            <input [(ngModel)]="emailid" type="text" class="form-control" placeholder="Enter Email Id"><br>
+           
+        </div>
+        <div *ngIf="save; else savee">
+        <button (click)="UpdateNotesList(dataa)" class="btn btn-primary" type="button">update</button></div>
+      
+        <ng-template #savee>
+        <button (click)="AddNoteText()" class="btn btn-primary" type="button">add note</button></ng-template>
+    </div>
+
+</div>
+</div> -->
+
+<!-- <p>add works!</p> -->
+<div  class="card" style="width: 18rem;" style="padding:10; margin-bottom: 10px;">
+<div   class="card-body" >
+        <div class="input-group mb-3" >
+            <div class="col-md-5 offset-md-4">
+                <h5>Name</h5>
+            <input [(ngModel)]="name" type="text" class="form-control" placeholder="Enter Your Name">  </div>
+            <div class="col-md-5 offset-md-4">
+                <h5>Phone Number</h5>
+            <input [(ngModel)]="phonenum" type="text" class="form-control" placeholder="Enter Your Phone Number">
+            </div>
+            <div class="col-md-5 offset-md-4">
+                <h5>Email Id</h5>
+            <input [(ngModel)]="emailid" type="text" class="form-control" placeholder="Enter Email Id"><br>
+            </div>
+        </div>
+        <div class="col-md-5 offset-md-4">
+        <div *ngIf="save; else savee">
+     <button (click)="UpdateNotesList(dataa)" class="btn btn-primary" type="button">Update Contact</button></div>
+    </div>
+    <div class="col-md-5 offset-md-4">
+        <ng-template #savee>
+        <button (click)="AddNoteText()" class="btn btn-primary" type="button">Add Contact</button></ng-template>
+    </div>
+
+</div>
+<button type="button" class="btn btn-default" aria-label="Left Align">
+    <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+  </button>
+
+
+</div>

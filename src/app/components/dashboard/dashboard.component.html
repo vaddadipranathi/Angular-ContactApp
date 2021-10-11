@@ -1,0 +1,31 @@
+<!-- <p>dashboard works!</p> -->
+<div class="row">
+    <div class="col-md-4" *ngFor="let item of data">
+        <div class="card" style="width: 18rem;" style="padding:10; margin-bottom: 10px;">
+            <div class="card-body">
+                <button style="font-size:24px; color:blue; float:right;" (click)="delDataAftteraddingTrash(item)"
+                 (click)="AddNoteToTrash(item)"><i class="fa fa-remove"></i></button>
+                 <button style="font-size:24px; color:blue; float:right;" (click)="EditNotesListt(item)"> 
+                    <i class="fa fa-edit"></i></button>
+                 <p>   </p>
+                 <h5 class="card-title">Name :</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{item.name}}</h6>
+                <h5 class="card-title">Mobile Number :</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{item.phonenum}}</h6>
+                <h5 class="card-title">Email Id :</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{item.emailid}}</h6>
+                
+              
+                <!-- <button (click)="EditNotesListt(item)" class="btn btn-primary" type="button">edit</button> -->
+                <!-- <button class="btn btn-primary" (click)="delDataAftteraddingTrash(item)" (click)="AddNoteToTrash(item)"
+                    type="button">delete</button> -->
+
+                <!-- <div *ngIf="isLoggedIn;">
+                    <button (click)="UpdateNotesList(item)  " class="btn btn-secondary" type="button"
+                        style="align-items:center;">Save</button>
+
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
